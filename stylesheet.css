@@ -15,7 +15,7 @@ header {
 }
 h1 {
     color: #0b090a;
-    font-size: 50px;
+    font-size: 70px;
     background-color: #e5383b;
     padding: 10px;
 }
@@ -42,9 +42,14 @@ a:focus {
     color:#0b090a;
     background-image: linear-gradient(#0b090a, #161a1d, #660708,#a4161a,#ba181b,#e5383b,#b1a7a6,#d3d3d3,#f5f3f4,#ffffff);
 }
-h2 {
-    display: flex;
+.subtitle {
+    display:flex;
     justify-content: flex-end;
-    margin-right: 30px;
-    background-color: #660708;
+}
+h2 {
+    margin-bottom: 125px;
+    margin-right: 50px;
+    background-color: #e5383b;
+    color: #0b090a;
+    font-size: 50px;
 }
