@@ -19,21 +19,21 @@ h1 {
     background-color: #e5383b;
     padding: 10px;
 }
-a:link {
+.navLink:link {
     display: inline-flex;
     padding: 50px;
     font-size: 25px;
     color: #e5383b;
 }
-a:visited {
+.navLink:visited {
     color: #e5383b;
 }
-a:hover {
+.navLink:hover {
     transform: scale(150%);
     cursor: pointer;
     color: #ffffff;
 }
-a:focus {
+.navLink:focus {
     color: #a4161a;
 }
 .gradient {
@@ -53,16 +53,53 @@ h2 {
     color: #0b090a;
     font-size: 50px;
 }
-h3{
+ h3 {
     background-color: #e5383b;
     color: #0b090a;
     font-size: 50px;
 }
 .titles {
     display:flex;
-    margin-left: 100px;
+    margin: 50px 100px;
+    padding: 30px;
+}
+#work {
+    background-color: #e5383b;
+    padding: 0;
 }
 #para1 {
     border-left: 5px solid #e5383b;
-    padding: 20px;
+    padding: 50px;
+}
+.comingSoon {
+    display: flex;
+    position: relative;
+    border: 5px solid #0b090a;
+    border-collapse: collapse;
+    width: 68%;
+    margin-left: 50px;
+    background-color: #0b090a;
+}
+.box {
+    display: flex;
+    position: relative;
+    border: 5px solid #0b090a;
+    margin: 10px 0;
+    width: 68%;
+    background-color: #0b090a;
+    margin-left: 50px;
+}
+.label {
+    display: flex;
+    background-color: #e5383b;
+    height: 25%;
+    font-size: 35px;
+}
+.imgLink:hover {
+    opacity: 50%;
+}
+#selfie {
+    display: flex;
+    margin: auto;
+   
 }
