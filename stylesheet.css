@@ -1,6 +1,34 @@
 body {
     display: flex;
+    width: 100%;
+    margin: 0;
     justify-content: space-between;
     flex-direction: column;
-    background-color: #F6FFF8;
+    background-color: #f0ebd8;
+}
+header {
+    display:flex;
+    justify-content: space-between;
+    background-color: #0d1321;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+h1 {
+    color: #f0ebd8;
+    font-size: 50px;
+    background-color: #3e5c76;
+    padding: 10px;
+}
+a:link {
+    display: inline-flex;
+    padding: 55px;
+    font-weight: bold;
+    font-size: 25px;
+    color: #f0ebd8;
+}
+a:visited {
+    color: #f0ebd8;
+}
+a:hover {
+    transform: scale(150%);
 }
