@@ -53,3 +53,16 @@ h2 {
     color: #0b090a;
     font-size: 50px;
 }
+h3{
+    background-color: #e5383b;
+    color: #0b090a;
+    font-size: 50px;
+}
+.titles {
+    display:flex;
+    margin-left: 100px;
+}
+#para1 {
+    border-left: 5px solid #e5383b;
+    padding: 20px;
+}
