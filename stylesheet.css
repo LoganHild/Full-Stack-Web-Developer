@@ -155,7 +155,7 @@ h2 {
         margin-left: 0;
     }
     .imgLink {
-        width:fit-content;
+        width:100%;
     }
 }
 @media (max-width: 600px) {
@@ -172,8 +172,8 @@ h2 {
         flex-direction:column;
         align-items: center;
     }
-    p{
-        width: 50%;
+    p {
+        width: 100%;
         margin: 0;
 
     }
@@ -188,7 +188,6 @@ h2 {
         margin-left: 0;
     }
     .imgLink {
-        width:fit-content;
+        width:100%;
     }
 }
-@media (max-width: )
