@@ -11,7 +11,7 @@ main {
     justify-content: space-between;
 }
 header, footer {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     background-color: #0b090a;
     flex-direction: row;
@@ -72,12 +72,11 @@ h2 {
 .para1 {
     border-left: 5px solid #e5383b;
     padding: 20px;
-    font-size: 26px;
+    font-size: 20px;
     background-color: #d3d3d3;
 }
 .comingSoon {
     display: flex;
-    position: relative;
     border: 5px solid #e5383b;
     border-collapse: collapse;
     width: 68%;
@@ -86,7 +85,6 @@ h2 {
 }
 .box {
     display: flex;
-    position: relative;
     border: 5px solid #e5383b;
     margin: 10px;
     width: 68%;
@@ -102,16 +100,13 @@ h2 {
 .imgLink:hover {
     opacity: 50%;
 }
-#self {
+.photo {
     display: flex;
     margin: auto;
     width: 300px;
     height: 400px;
 }
-.image {
-    width: 160%;
-    height: 300px;
-}
+
 .deployed {
     width: 500px;
     height: 300px;
@@ -124,3 +119,76 @@ h2 {
 #contact {
     border: 5px solid #ffffff;
 }
+.h4Link:visited {
+    color: #0b090a;
+}
+.h4Link:link {
+    color: #0b090a;
+}
+@media (max-width: 480px) {
+    footer {
+        flex-direction: column;
+    }
+    .chat {
+        margin-left: 70px;
+    }
+    header {
+        flex-direction:column;
+    }
+    article {
+        flex-direction:column;
+        align-items: center;
+    }
+    p{
+        width: 50%;
+        margin: 0;
+
+    }
+    .comingSoon {
+        width: 100%;
+        flex-direction:column;
+        margin-left: 0;
+    }
+    .box {
+        width: 100%;
+        flex-direction:column;
+        margin-left: 0;
+    }
+    .imgLink {
+        width:fit-content;
+    }
+}
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+    }
+    .chat {
+        margin-left: 70px;
+    }
+    header {
+        flex-direction:column;
+    }
+    article {
+        flex-direction:column;
+        align-items: center;
+    }
+    p{
+        width: 50%;
+        margin: 0;
+
+    }
+    .comingSoon {
+        width: 100%;
+        flex-direction:column;
+        margin-left: 0;
+    }
+    .box {
+        width: 100%;
+        flex-direction:column;
+        margin-left: 0;
+    }
+    .imgLink {
+        width:fit-content;
+    }
+}
+@media (max-width: )
