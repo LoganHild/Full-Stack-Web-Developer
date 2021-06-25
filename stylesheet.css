@@ -190,12 +190,12 @@ h2 {
         flex-direction:var(--columnDirection);
         align-items: center;
     }
-    p{
-        max-width: 50%;
+    p {
+        max-width: 100%;
         margin: 0;
     }
     .comingSoon {
-        width:var(--width100);
+        max-width:var(--width100);
         flex-direction:var(--columnDirection);
         margin-left: 0;
     }
