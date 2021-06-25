@@ -139,7 +139,7 @@ h2 {
     color: var(--blackColor);
 }
 /* fix this*/
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
     footer {
         flex-direction: var(--columnDirection);
     }
