@@ -101,7 +101,14 @@ p {
     font-size: 20px;
     background-color: #d3d3d3;
 }
+/************** fixed up until this point!!!!!!!!!!!!!!!!!!!!!!!!!!***************/
 /* justify-content was not working for these, had to use margin*/
+section {
+    display: var(--flexDisplay);
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 50px;
+}
 .comingSoon {
     display: var(--flexDisplay);
     border: var(--borderRed);
