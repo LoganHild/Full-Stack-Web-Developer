@@ -104,43 +104,50 @@ p {
 }
 /************** fixed up until this point!!!!!!!!!!!!!!!!!!!!!!!!!!***************/
 /* justify-content was not working for these, had to use margin*/
-section {
+section, .inherit {
     display: var(--flexDisplay);
     align-items: flex-start;
     flex-direction: column;
     margin-left: 50px;
 }
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .comingSoon {
     display: var(--flexDisplay);
+    align-items: center;
     border: var(--borderRed);
-    width: 68%;
-    margin-left: 360px;
+    width: 51%;
     background-color: var(--blackColor);
 }
-.box {
+.deployed {
+    width: 100%;
+    height: 100%;
+}
+.refactor, .me {
     display: var(--flexDisplay);
     border: var(--borderRed);
-    margin: 10px;
-    width: 68%;
+    margin-top: 10px;
+    width: 25%;
     background-color: var(--blackColor);
-    margin-left: 360px;
+}
+.align {
+    display: flex;
+    justify-content: center;
+}
+.me {
+    margin-left: 10px;
 }
 .label {
     display: var(--flexDisplay);
     background-color: var(--redColor);
-    height: 25%;
+    height: 35%;
     font-size: 35px;
 }
 .imgLink:hover {
     opacity: 50%;
-}
-.image {
-    width: 150%;
-
-}
-.deployed {
-    width: 500px;
-    height: 300px;
 }
 .reverse {
     padding: 60px;
