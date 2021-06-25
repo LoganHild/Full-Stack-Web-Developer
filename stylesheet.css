@@ -138,44 +138,8 @@ h2 {
 .h4Link:link {
     color: var(--blackColor);
 }
-@media (min-width: 320px) and (max-width: 600px) {
-    footer {
-        flex-direction: var(--columnDirection);
-    }
-    .chat {
-        margin-left: 70px;
-    }
-    header {
-        flex-direction:var(--columnDirection);
-    }
-    article {
-        flex-direction:var(--columnDirection);
-        align-items: center;
-    }
-    p {
-        width:var(--width100);
-        margin: 0;
-
-    }
-    .comingSoon {
-        width:var(--width100);
-        flex-direction:var(--columnDirection);
-        margin-left: 0;
-    }
-    .box {
-        width:var(--width100);
-        flex-direction:var(--columnDirection);
-        margin-left: 0;
-    }
-    .imgLink {
-        width: var(--width100);
-    }
-    .image {
-        width:var(--width100);
-    }
-}
 /* fix this*/
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
     footer {
         flex-direction: var(--columnDirection);
     }
