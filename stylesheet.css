@@ -204,7 +204,9 @@ h2 {
     }
     .imgLink {
         width:100%;
-        overflow: hidden;
+    }
+    .deployed {
+        width: 100%;
     }
 }
 @media (max-width: 600px) {
