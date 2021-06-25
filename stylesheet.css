@@ -206,7 +206,7 @@ h2 {
         width:100%;
     }
     .deployed {
-        width: 100%;
+        width: 50%;
     }
 }
 @media (max-width: 600px) {
