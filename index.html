@@ -8,7 +8,7 @@
     <title>Logan's Professional Portfolio</title>
 </head>
 <body>
-    
+    <!--dont mess with header, already good-->
     <header>
         <h1>Logan Hildebrandt</h1>
         <nav>
@@ -18,14 +18,16 @@
         </nav>
     </header>
     <div class="gradient"></div>
-    <div class="subtitle">
-        <h2>Professional Portfolio</h2>
-    </div>
-    <figure><img class="photo" src="https://i.stack.imgur.com/y9DpT.jpg" alt="picture of self"></figure>
+    <!--moved main tag around-->
     <main>
+        <div class="subtitle">
+            <h2>Professional Portfolio</h2>
+        </div>
+        <figure><img class="photo" src="https://i.stack.imgur.com/y9DpT.jpg" alt="picture of self"></figure>
+    
         <article class="titles">
             <h3 id="about">About Me</h3>
-            <p class="titles para1">I am from Cannon Falls, Minnesota, a town of 4,000 or so people.
+            <p class="para1">I am from Cannon Falls, Minnesota, a town of 4,000 or so people.
                 I have a huge family. To the point I don't recognize them in public or know their names. 
                 I've worked as a DSP for about 6 years taking care of vulnerable adults.
                 My favorite hobby is just being at home and relaxing. I love Dogs, and I try to visit my family dog whenever I have a chance. His name is Teddy.
@@ -34,7 +36,10 @@
                 and just trying to live a healthier lifestyle in general. The keyword here is "trying." 
             </p>
         </article>
-        <figure><img class="photo" src="./assets/Teddy.jpg" alt="My family dog, Teddy."></figure>
+        <figure>
+            <img id="teddy" class="photo" src="./assets/Teddy.jpg" alt="My family dog, Teddy.">
+            <img id="family" src="./assets/Family.jpg" alt="Myself and Family at brother's football game.">
+        </figure>
         <section class="titles">
             <h3 id="work">Projects</h3>
         </section>
@@ -50,6 +55,7 @@
         </div>
     </main>
     <div class="reverse"></div>
+    <!--dont mess with footer, already good-->
     <footer>
         <h3 id="contact" class="titles">Contact Me!</h3>
         <a class="chat" href="mailto:hildebrandtlogan@gmail.com" target="_blank">Send Email</a>

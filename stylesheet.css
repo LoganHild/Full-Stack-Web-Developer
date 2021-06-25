@@ -9,17 +9,10 @@
     --borderWhite: 5px solid #ffffff;
     --width100: 100%;
 }
+/* removed diplay:flex, justify-content, and flex-direction*/
 body {
     margin: 0;
     background-color: var(--whiteColor);
-    display: var(--flexDisplay);
-    flex-direction: var(--columnDirection);
-    justify-content: space-between;
-}
-main {
-    display: var(--flexDisplay);
-    flex-direction: var(--columnDirection);
-    justify-content: space-between;
 }
 header, footer {
     display: var(--flexDisplay);
@@ -44,7 +37,7 @@ h1 {
     color: var(--redColor);
 }
 .navLink:hover, .chat:hover {
-    transform: scale(150%);
+    transform: scale(110%);
     cursor: pointer;
     color: var(--whiteColor);
 }
@@ -52,13 +45,18 @@ h1 {
     color: var(--redColor);
 }
 .gradient {
-    padding: 80px;
+    padding: 60px;
     background-image: linear-gradient(var(--blackColor), #161a1d, #660708,#a4161a,#ba181b,var(--redColor),#b1a7a6,#d3d3d3,var(--whiteColor));
 }
+main {
+    display: var(--flexDisplay);
+    flex-direction: var(--columnDirection);
+    justify-content: space-between;
+}
+/*removed margin:auto*/
 .subtitle {
     display: var(--flexDisplay);
     justify-content: center;
-    margin: auto;
 }
 h2 {
     border: var(--borderBlack);
@@ -66,15 +64,33 @@ h2 {
     color: var(--blackColor);
     font-size: 50px;
 }
+/*was able to get flexbox to work with parent element, YAY!*/
+figure {
+    display: var(--flexDisplay);
+    justify-content: center;
+}
+/*removed margin and flex, this is for both photos*/
+.photo {
+    width: 300px;
+    height: 400px;
+}
+#teddy {
+    margin: 100px;
+}
+#family {
+    margin-top: 50px;
+    width: 650px;
+    height: 500px;
+}
+.titles {
+    display: var(--flexDisplay);
+    margin-left: 50px;
+}
  h3 {
      border: var(--borderBlack);
     background-color: var(--redColor);
     color: var(--blackColor);
     font-size: 40px;
-}
-.titles {
-    display: var(--flexDisplay);
-    margin: 50px 100px;
 }
 #work {
     background-color: var(--redColor);
@@ -111,13 +127,6 @@ h2 {
 .imgLink:hover {
     opacity: 50%;
 }
-/* for some reason justify-content wasn't working to center the photos , had to use margin*/
-.photo {
-    display: var(--flexDisplay);
-    margin: auto;
-    width: 300px;
-    height: 400px;
-}
 .image {
     width: 150%;
 
@@ -127,7 +136,7 @@ h2 {
     height: 300px;
 }
 .reverse {
-    padding: 80px;
+    padding: 60px;
     margin-top: 50px;
     background-image: linear-gradient(var(--whiteColor), #d3d3d3, #b1a7a6, var(--redColor), #ba181b, #a4161a, #660708, #161a1d, var(--blackColor));
 }
@@ -140,8 +149,7 @@ h2 {
 .h4Link:link {
     color: var(--blackColor);
 }
-/* fix this*/
-@media (max-width: 320px) {
+@media (max-width: 480px) {
     footer {
         flex-direction: var(--columnDirection);
     }
@@ -150,6 +158,9 @@ h2 {
     }
     header {
         flex-direction:var(--columnDirection);
+    }
+    h1 {
+        font-size: 60px;
     }
     article {
         flex-direction:var(--columnDirection);
@@ -170,41 +181,6 @@ h2 {
         margin-left: 0;
     }
     .imgLink {
-        max-width: var(--width100);
-    }
-}
-@media (max-width: 480px) {
-    footer {
-        flex-direction: var(--columnDirection);
-    }
-    .chat {
-        margin-left: 70px;
-    }
-    header {
-        flex-direction:var(--columnDirection);
-    }
-    h1 {
-        font-size: 60px;
-    }
-    article {
-        flex-direction:var(--columnDirection);
-        align-items: center;
-    }
-    p {
-        max-width: 100%;
-        margin: 0;
-    }
-    .comingSoon {
-        max-width:var(--width100);
-        flex-direction:var(--columnDirection);
-        margin-left: 0;
-    }
-    .box {
-        width:var(--width100);
-        flex-direction:var(--columnDirection);
-        margin-left: 0;
-    }
-    .imgLink {
          max-width:100%;
     }
 }
@@ -213,12 +189,12 @@ h2 {
         flex-direction: var(--columnDirection);
     }
     .chat {
-        margin-left: 70px;
+        flex-direction: var(--columnDirection);
     }
     header {
         flex-direction:var(--columnDirection);
     }
-    article {
+    .titles {
         flex-direction:var(--columnDirection);
         align-items: center;
     }
