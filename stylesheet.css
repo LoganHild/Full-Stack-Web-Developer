@@ -8,6 +8,8 @@
     --borderBlack: 5px solid #0b090a;
     --borderWhite: 5px solid #ffffff;
     --width100: 100%;
+    --marginFifty: 50px;
+    --alignItems: center;
 }
 /* removed diplay:flex, justify-content, and flex-direction*/
 body {
@@ -54,7 +56,7 @@ main {
     justify-content: space-between;
 }
 /*removed margin:auto*/
-.subtitle {
+.subtitle, figure, .align {
     display: var(--flexDisplay);
     justify-content: center;
 }
@@ -63,11 +65,6 @@ h2 {
     background-color: var(--redColor);
     color: var(--blackColor);
     font-size: 50px;
-}
-/*was able to get flexbox to work with parent element, YAY!*/
-figure {
-    display: var(--flexDisplay);
-    justify-content: center;
 }
 /*removed margin and flex*/
 .photo {
@@ -78,7 +75,7 @@ figure {
     margin: 100px;
 }
 #family {
-    margin-top: 50px;
+    margin-top: var(--marginFifty);
     width: 650px;
     height: 500px;
 }
@@ -86,7 +83,7 @@ article {
     display: var(--flexDisplay);
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 50px;
+    margin-left: var(--marginFifty);
 }
 .titles {
     border: var(--borderBlack);
@@ -95,8 +92,8 @@ article {
     font-size: 40px;
 }
 p {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: var(--marginFifty);
+    margin-right: var(--marginFifty);
     border-left: var(--borderRed);
     padding: 20px;
     font-size: 20px;
@@ -107,22 +104,22 @@ section, .inherit {
     display: var(--flexDisplay);
     align-items: flex-start;
     flex-direction: column;
-    margin-left: 50px;
+    margin-left: var(--marginFifty);
 }
 .center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: var(--flexDisplay);
+    flex-direction: var(--columnDirection);
+    align-items: var(--alignItems);
 }
 .comingSoon {
     display: var(--flexDisplay);
-    align-items: center;
+    align-items: var(--alignItems);
     border: var(--borderRed);
     width: 51%;
     background-color: var(--blackColor);
 }
 .deployed {
-    width: 100%;
+    width: var(--width100);
     height: 100%;
 }
 .refactor, .me {
@@ -131,10 +128,6 @@ section, .inherit {
     margin-top: 10px;
     width: 25%;
     background-color: var(--blackColor);
-}
-.align {
-    display: flex;
-    justify-content: center;
 }
 .me {
     margin-left: 10px;
@@ -150,7 +143,7 @@ section, .inherit {
 }
 .reverse {
     padding: 60px;
-    margin-top: 50px;
+    margin-top: var(--marginFifty);
     background-image: linear-gradient(var(--whiteColor), #d3d3d3, #b1a7a6, var(--redColor), #ba181b, #a4161a, #660708, #161a1d, var(--blackColor));
 }
 #contact {
@@ -178,7 +171,7 @@ section, .inherit {
     }
     article {
         flex-direction:var(--columnDirection);
-        align-items: center;
+        align-items: var(--alignItems);
     }
     p{
         width: 50%;
