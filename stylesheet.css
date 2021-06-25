@@ -81,11 +81,11 @@ h2 {
 }
 article {
     display: var(--flexDisplay);
-    flex-direction: column;
+    flex-direction: var(--columnDirection);
     align-items: flex-start;
     margin-left: var(--marginFifty);
 }
-.titles {
+h3 {
     border: var(--borderBlack);
     background-color: var(--redColor);
     color: var(--blackColor);
@@ -100,7 +100,7 @@ p {
     background-color: #d3d3d3;
 }
 /*************Think I finally got the flexbox working, Simplify!!!!!!!!!!!!!!!!!!!!******/
-section, .inherit {
+section {
     display: var(--flexDisplay);
     align-items: flex-start;
     flex-direction: column;
@@ -223,6 +223,6 @@ section, .inherit {
         width: var(--width100);
     }
     .image {
-        width:var(--width100);
+        width: var(--width100);
     }
 }
