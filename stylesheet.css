@@ -102,8 +102,7 @@ p {
     font-size: 20px;
     background-color: #d3d3d3;
 }
-/************** fixed up until this point!!!!!!!!!!!!!!!!!!!!!!!!!!***************/
-/* justify-content was not working for these, had to use margin*/
+/*************Think I finally got the flexbox working, Simplify!!!!!!!!!!!!!!!!!!!!******/
 section, .inherit {
     display: var(--flexDisplay);
     align-items: flex-start;
@@ -163,6 +162,7 @@ section, .inherit {
 .h4Link:link {
     color: var(--blackColor);
 }
+/*Working up until this point!!!*/
 @media (max-width: 480px) {
     footer {
         flex-direction: var(--columnDirection);
