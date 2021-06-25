@@ -203,10 +203,7 @@ h2 {
         margin-left: 0;
     }
     .imgLink {
-        width:100%;
-    }
-    .deployed {
-        width: 50%;
+         max-width:100%;
     }
 }
 @media (max-width: 600px) {
