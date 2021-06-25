@@ -207,9 +207,6 @@ h2 {
     .imgLink {
          max-width:100%;
     }
-    .deployed {
-        max-width: var(--width100);
-    }
 }
 @media (max-width: 600px) {
     footer {
