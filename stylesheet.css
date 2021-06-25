@@ -204,7 +204,7 @@ h2 {
     }
     .imgLink {
         width:100%;
-        flex-wrap: nowrap;
+        overflow: hidden;
     }
 }
 @media (max-width: 600px) {
