@@ -183,6 +183,9 @@ h2 {
     header {
         flex-direction:var(--columnDirection);
     }
+    h1 {
+        font-size: 60px;
+    }
     article {
         flex-direction:var(--columnDirection);
         align-items: center;
