@@ -86,6 +86,7 @@ h2 {
     font-size: 20px;
     background-color: #d3d3d3;
 }
+/* justify-content was not working for these, had to use margin*/
 .comingSoon {
     display: var(--flexDisplay);
     border: var(--borderRed);
@@ -110,6 +111,7 @@ h2 {
 .imgLink:hover {
     opacity: 50%;
 }
+/* for some reason justify-content wasn't working to center the photos , had to use margin*/
 .photo {
     display: var(--flexDisplay);
     margin: auto;
@@ -139,6 +141,39 @@ h2 {
     color: var(--blackColor);
 }
 /* fix this*/
+@media (max-width: 320px) {
+    footer {
+        flex-direction: var(--columnDirection);
+    }
+    .chat {
+        margin-left: 70px;
+    }
+    header {
+        flex-direction:var(--columnDirection);
+    }
+    article {
+        flex-direction:var(--columnDirection);
+        align-items: center;
+    }
+    p{
+        width: 50%;
+        margin: 0;
+
+    }
+    .comingSoon {
+        width:var(--width100);
+        flex-direction:var(--columnDirection);
+        margin-left: 0;
+    }
+    .box {
+        width:var(--width100);
+        flex-direction:var(--columnDirection);
+        margin-left: 0;
+    }
+    .imgLink {
+        width:100%;
+    }
+}
 @media (max-width: 480px) {
     footer {
         flex-direction: var(--columnDirection);
