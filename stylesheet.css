@@ -174,6 +174,9 @@ h2 {
     }
 }
 @media (max-width: 480px) {
+    body {
+        max-width: 100%;
+    }
     footer {
         flex-direction: var(--columnDirection);
     }
@@ -204,7 +207,6 @@ h2 {
     }
     .imgLink {
          max-width:100%;
-         max-height: 100%;
     }
 }
 @media (max-width: 600px) {
@@ -224,7 +226,6 @@ h2 {
     p {
         width:var(--width100);
         margin: 0;
-
     }
     .comingSoon {
         width:var(--width100);
