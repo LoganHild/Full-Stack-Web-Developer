@@ -158,7 +158,6 @@ h2 {
     p{
         width: 50%;
         margin: 0;
-
     }
     .comingSoon {
         width:var(--width100);
@@ -171,7 +170,7 @@ h2 {
         margin-left: 0;
     }
     .imgLink {
-        width:100%;
+        width:50%;
     }
 }
 @media (max-width: 480px) {
