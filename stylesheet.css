@@ -172,15 +172,15 @@ h4 {
         align-items: center;
     }
     figure {
-        width: 450px;
-        height: 320px;
+        width: 100%;
     }
     #teddy {
         flex-direction:var(--columnDirection);
         align-items: center;
     }
     #family {
-        width: 50%;
+        width: 400px;
+        height: 320px;
     }
     .comingSoon {
         width:var(--width100);
