@@ -159,11 +159,11 @@ h4 {
 }
 /*changed images to be reponsive to screen size*/
 @media screen and (max-width: 480px) {
+    body {
+        margin: 0;
+    }
     header {
         flex-direction:var(--columnDirection);
-        width: 100%;
-    }
-    h1 {
         width: 100%;
     }
     p {
@@ -178,9 +178,11 @@ h4 {
         width: 100%;
     }
     #teddy {
-        margin: 0;
         flex-direction:var(--columnDirection);
         align-items: center;
+    }
+    #family {
+        width: 80%;
     }
     .comingSoon {
         width:var(--width100);
