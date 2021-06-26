@@ -164,7 +164,7 @@ h4 {
     }
     header {
         flex-direction:var(--columnDirection);
-        width: 100%;
+        flex-grow: 1;
     }
     p {
         width:var(--width100);
