@@ -172,8 +172,9 @@ h4 {
     }
     h3, figure {
         flex-direction:var(--columnDirection);
-        align-items: center;
         font-size: 25px;
+    }
+    #projects {
     }
     h2 {
         font-size: 30px;
