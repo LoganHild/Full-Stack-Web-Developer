@@ -163,9 +163,6 @@ h4 {
         flex-direction:var(--columnDirection);
         width: 100%;
     }
-    body {
-        margin: 0;
-    }
     p {
         width:var(--width100);
         margin: 0;
