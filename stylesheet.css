@@ -175,6 +175,8 @@ h4 {
     }
     #teddy {
         margin: 0;
+        flex-direction:var(--columnDirection);
+        align-items: center;
     }
     .comingSoon {
         width:var(--width100);
@@ -204,17 +206,15 @@ h4 {
         width:var(--width100);
         margin: 0;
     }
-    /*only way I can test is with my phone, doing commits to deployed page for reference*/
     h3, figure {
         flex-direction:var(--columnDirection);
+        align-items: center;
     }
     figure {
-        width: 80%;
+        width: 100%;
     }
     #teddy {
         margin: 0;
-        flex-direction:var(--columnDirection);
-        align-items: center;
     }
     .comingSoon {
         width:var(--width100);
