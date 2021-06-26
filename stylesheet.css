@@ -159,9 +159,6 @@ h4 {
 }
 /*changed images to be reponsive to screen size*/
 @media screen and (max-width: 480px) {
-    body {
-        margin: 0;
-    }
     header {
         flex-direction:var(--columnDirection);
         width: 100%;
@@ -182,7 +179,7 @@ h4 {
         align-items: center;
     }
     #family {
-        width: 80%;
+        width: 50%;
     }
     .comingSoon {
         width:var(--width100);
