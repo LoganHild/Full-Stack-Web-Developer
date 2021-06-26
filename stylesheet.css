@@ -12,6 +12,7 @@
     --alignItems: center;
 }
 /* removed diplay:flex, justify-content, and flex-direction*/
+/*reorganized to be in a better order, easier for me to read*/
 body {
     margin: 0;
     background-color: var(--whiteColor);
