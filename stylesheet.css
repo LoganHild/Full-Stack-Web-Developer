@@ -163,6 +163,9 @@ h4 {
         flex-direction:var(--columnDirection);
         width: 100%;
     }
+    body {
+        margin: 0;
+    }
     p {
         width:var(--width100);
         margin: 0;
@@ -179,7 +182,7 @@ h4 {
         align-items: center;
     }
     #family {
-        width: 400px;
+        width: 350px;
         height: 320px;
     }
     .comingSoon {
