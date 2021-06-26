@@ -27,8 +27,7 @@ header, footer {
 h1 {
     color: var(--blackColor);
     font-size: 70px;
-    background-color: var(--redColor);
-    padding: 10px;
+    background-color: var(--redColor); 
     border: var(--borderWhite);
 }
 .navLink:link, .chat:link {
@@ -158,49 +157,7 @@ h4 {
     color: var(--blackColor);
 }
 /*changed images to be reponsive to screen size*/
-@media screen and (min-width: 320px) and (max-width: 480px) {
-    body {
-        margin: 0;
-    }
-    header {
-        flex-direction:var(--columnDirection);
-    }
-    p {
-        width:var(--width100);
-        margin: 0;
-    }
-    h3, figure {
-        flex-direction:var(--columnDirection);
-        align-items: center;
-    }
-    figure {
-        flex-shrink: 1;
-    }
-    #teddy {
-        flex-direction:var(--columnDirection);
-        align-items: center;
-    }
-    .comingSoon {
-        width:var(--width100);
-        flex-direction:var(--columnDirection);
-       
-    }
-    .refactor, .me {
-        width:var(--width100);
-        flex-direction:var(--columnDirection);
-       
-    }
-    .me {
-        margin-left: 10px;
-    }
-    .imgLink {
-        width: var(--width100);
-    }
-    footer {
-        flex-direction: var(--columnDirection);
-        width: 100%;
-    }
-}
+
 @media screen and (max-width: 600px) {
     header {
         flex-direction:var(--columnDirection);
@@ -208,13 +165,21 @@ h4 {
     p {
         width:var(--width100);
         margin: 0;
+        padding: 0;
+    }
+    section {
+        margin: 0;
     }
     h3, figure {
         flex-direction:var(--columnDirection);
         align-items: center;
     }
     figure {
-        width: 100%;
+        width: var(--width100);
+        margin: 0;
+    }
+    #family {
+        width: 600px;
     }
     #teddy {
         margin: 0;
@@ -222,7 +187,6 @@ h4 {
     .comingSoon {
         width:var(--width100);
         flex-direction:var(--columnDirection);
-       
     }
     .refactor, .me {
         width:var(--width100);
