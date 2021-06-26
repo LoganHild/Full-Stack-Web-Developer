@@ -161,6 +161,7 @@ h4 {
 @media screen and (max-width: 480px) {
     header {
         flex-direction:var(--columnDirection);
+        width: 100%;
     }
     p {
         width:var(--width100);
@@ -196,6 +197,7 @@ h4 {
     }
     footer {
         flex-direction: var(--columnDirection);
+        width: 100%;
     }
 }
 @media screen and (max-width: 600px) {
