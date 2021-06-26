@@ -171,7 +171,7 @@ h4 {
         align-items: center;
     }
     figure {
-        width: 80%;
+        width: 100%;
     }
     #teddy {
         margin: 0;
@@ -213,6 +213,8 @@ h4 {
     }
     #teddy {
         margin: 0;
+        flex-direction:var(--columnDirection);
+        align-items: center;
     }
     .comingSoon {
         width:var(--width100);
