@@ -163,6 +163,9 @@ h4 {
         flex-direction:var(--columnDirection);
         width: 100%;
     }
+    h1 {
+        font-size: 60px;
+    }
     p {
         width:var(--width100);
         margin: 0;
