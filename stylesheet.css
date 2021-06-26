@@ -1,3 +1,4 @@
+/*added a bunch of variables for repeated values*/
 :root {
     --columnDirection: column;
     --blackColor: #0b090a;
@@ -56,7 +57,7 @@ main {
     flex-direction: var(--columnDirection);
     justify-content: space-between;
 }
-/*removed margin:auto*/
+/*removed margin:auto now that I fixed flexbox*/
 .subtitle, figure, .align {
     display: var(--flexDisplay);
     justify-content: center;
@@ -100,7 +101,7 @@ p {
     font-size: 20px;
     background-color: #d3d3d3;
 }
-/*************Think I finally got the flexbox working, Simplify!!!!!!!!!!!!!!!!!!!!******/
+/*think I finally got the flexbox working, simplify!*/
 section {
     display: var(--flexDisplay);
     align-items: flex-start;
@@ -133,7 +134,7 @@ section {
 .me {
     margin-left: 10px;
 }
-.label {
+h4 {
     display: var(--flexDisplay);
     background-color: var(--redColor);
     height: 35%;
@@ -156,74 +157,43 @@ section {
 .h4Link:link {
     color: var(--blackColor);
 }
-/*Working up until this point!!!*/
-@media (max-width: 480px) {
-    footer {
-        flex-direction: var(--columnDirection);
-    }
-    .chat {
-        margin-left: 70px;
-    }
+/*changed images to be reponsive to screen size*/
+
+@media screen and (min-width:320px) and (max-width: 600px) {
     header {
         flex-direction:var(--columnDirection);
-    }
-    h1 {
-        font-size: 60px;
-    }
-    article {
-        flex-direction:var(--columnDirection);
-        align-items: var(--alignItems);
-    }
-    p{
-        width: 50%;
-        margin: 0;
-    }
-    .comingSoon {
-        width:var(--width100);
-        flex-direction:var(--columnDirection);
-        margin-left: 0;
-    }
-    .box {
-        width:var(--width100);
-        flex-direction:var(--columnDirection);
-        margin-left: 0;
-    }
-    .imgLink {
-         max-width:100%;
-    }
-}
-@media (max-width: 600px) {
-    footer {
-        flex-direction: var(--columnDirection);
-    }
-    .chat {
-        flex-direction: var(--columnDirection);
-    }
-    header {
-        flex-direction:var(--columnDirection);
-    }
-    .titles {
-        flex-direction:var(--columnDirection);
-        align-items: center;
     }
     p {
         width:var(--width100);
         margin: 0;
     }
+    h3, figure {
+        flex-direction:var(--columnDirection);
+        align-items: center;
+    }
+    figure {
+        width: 80%;
+    }
+    #teddy {
+        margin: 0;
+    }
     .comingSoon {
         width:var(--width100);
         flex-direction:var(--columnDirection);
-        margin-left: 0;
+       
     }
-    .box {
+    .refactor, .me {
         width:var(--width100);
         flex-direction:var(--columnDirection);
-        margin-left: 0;
+       
+    }
+    .me {
+        margin-left: 10px;
     }
     .imgLink {
         width: var(--width100);
     }
-    .image {
-        width: var(--width100);
+    footer {
+        flex-direction: var(--columnDirection);
     }
 }
