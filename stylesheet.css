@@ -12,8 +12,6 @@
     --marginFifty: 50px;
     --alignItems: center;
 }
-/* removed diplay:flex, justify-content, and flex-direction*/
-/*reorganized to be in a better order, easier for me to read*/
 body {
     margin: 0;
     background-color: var(--whiteColor);
@@ -100,7 +98,7 @@ p {
     font-size: 20px;
     background-color: #d3d3d3;
 }
-/*think I finally got the flexbox working, simplify!*/
+/*think I finally got the flexbox working*/
 section {
     display: var(--flexDisplay);
     align-items: flex-start;
@@ -213,9 +211,6 @@ h4 {
     footer {
         flex-direction: var(--columnDirection);
     }
-}
-@media screen and (max-width: 480px) {
-    
 }
 @media screen and (max-width: 600px) {
     header {
