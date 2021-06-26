@@ -158,8 +158,45 @@ h4 {
     color: var(--blackColor);
 }
 /*changed images to be reponsive to screen size*/
-
-@media screen and (min-width:480px) and (max-width: 600px) {
+@media screen and (max-width: 480px) {
+    header {
+        flex-direction:var(--columnDirection);
+    }
+    p {
+        width:var(--width100);
+        margin: 0;
+    }
+    h3, figure {
+        flex-direction:var(--columnDirection);
+        align-items: center;
+    }
+    figure {
+        width: 80%;
+    }
+    #teddy {
+        margin: 0;
+    }
+    .comingSoon {
+        width:var(--width100);
+        flex-direction:var(--columnDirection);
+       
+    }
+    .refactor, .me {
+        width:var(--width100);
+        flex-direction:var(--columnDirection);
+       
+    }
+    .me {
+        margin-left: 10px;
+    }
+    .imgLink {
+        width: var(--width100);
+    }
+    footer {
+        flex-direction: var(--columnDirection);
+    }
+}
+@media screen and (max-width: 600px) {
     header {
         flex-direction:var(--columnDirection);
     }
