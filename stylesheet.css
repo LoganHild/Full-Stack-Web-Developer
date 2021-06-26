@@ -159,6 +159,9 @@ h4 {
 }
 /*changed images to be reponsive to screen size*/
 @media screen and (min-width: 320px) and (max-width: 480px) {
+    body {
+        margin: 0;
+    }
     header {
         flex-direction:var(--columnDirection);
         width: 100%;
