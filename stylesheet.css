@@ -70,20 +70,23 @@ h2 {
 .photo {
     width: 300px;
     height: 400px;
+    border: var(--borderRed)
 }
 #teddy {
     margin: 100px;
 }
+/*couldn't get the border to fit properly*/
 #family {
     margin-top: var(--marginFifty);
     width: 650px;
     height: 500px;
+    border: var(--borderRed);
 }
 article {
     display: var(--flexDisplay);
     flex-direction: var(--columnDirection);
     align-items: flex-start;
-    margin-left: var(--marginFifty);
+    width:var(--width100);
 }
 h3 {
     border: var(--borderBlack);
@@ -93,12 +96,12 @@ h3 {
     margin: var(--marginFifty);
 }
 p {
-    margin-left: var(--marginFifty);
-    margin-right: var(--marginFifty);
     border-left: var(--borderRed);
+    text-indent: 40px;
     padding: 20px;
     font-size: 20px;
     background-color: #d3d3d3;
+    margin: 10px;
 }
 /*think I finally got the flexbox working*/
 section {
@@ -187,8 +190,7 @@ h4 {
         margin: var(--marginZero);
     }
     #family {
-        margin: var(--marginZero);
-        width: 250px;
+        margin-left: var(--marginZero);
         height: 300px;
     }
     #teddy {
@@ -230,7 +232,7 @@ h4 {
         margin: var(--marginZero);
     }
     #family {
-        width: var(--marginFifty);
+        width: var(--width100);
     }
     #teddy {
         margin: var(--marginZero);
@@ -270,9 +272,6 @@ h4 {
         width: var(--width100);
         margin: var(--marginZero);
     }
-    #family {
-        width: var(--width100);
-    }
     #teddy {
         margin: var(--marginZero);
     }
@@ -290,7 +289,6 @@ h4 {
         width: var(--width100);
     }
 }
-
 @media screen and (max-width: 800px) {
     header, footer {
         flex-direction:var(--columnDirection);
@@ -311,9 +309,6 @@ h4 {
     figure {
         width: var(--width100);
         margin: var(--marginZero);
-    }
-    #family {
-        width: var(--width100);
     }
     #teddy {
         margin: var(--marginZero);
@@ -350,9 +345,7 @@ h4 {
         width: var(--width100);
         margin: var(--marginZero);
     }
-    #family {
-        width: var(--width100);
-    }
+  
     #teddy {
         margin: var(--marginZero);
     }
