@@ -1,4 +1,4 @@
-# Full-Stack-Web-Developer
+# Developer Portfolio
 ## Description
 Deployed portfolio to be updated with time for showcasing previous work samples, as well as demonstrate some of the skills acquired along the way. Also provides a few details about my background and plans for the future.
 ## Deployed Application Link
