@@ -13,10 +13,6 @@
     --alignItems: center;
     --marginZero: 0;
 }
-body {
-    margin: var(--marginZero);
-    background-color: var(--whiteColor);
-}
 header, footer {
     display: var(--flexDisplay);
     justify-content: space-between;
@@ -31,8 +27,7 @@ h1 {
 }
 .navLink:link, .chat:link {
     display: inline-flex;
-    padding: 50px;
-    font-size: 25px;
+    padding: 0 50px;
     color: var(--redColor);
 }
 .navLink:visited, .chat:visited {
@@ -50,13 +45,8 @@ h1 {
     padding: 60px;
     background-image: linear-gradient(var(--blackColor), #161a1d, #660708,#a4161a,#ba181b,var(--redColor),#b1a7a6,#d3d3d3,var(--whiteColor));
 }
-main {
-    display: var(--flexDisplay);
-    flex-direction: var(--columnDirection);
-    justify-content: space-between;
-}
-/*removed margin:auto now that I fixed flexbox*/
-.subtitle, figure, .align {
+
+.subtitle, figure /*.align*/ {
     display: var(--flexDisplay);
     justify-content: center;
 }
@@ -72,7 +62,7 @@ h2 {
     height: 400px;
     border: var(--borderRed)
 }
-#teddy {
+.teddy {
     margin: 100px;
 }
 /*couldn't get the border to fit properly*/
@@ -85,62 +75,54 @@ h2 {
 article {
     display: var(--flexDisplay);
     flex-direction: var(--columnDirection);
-    align-items: flex-start;
-    width:var(--width100);
 }
 h3 {
     border: var(--borderBlack);
     background-color: var(--redColor);
     color: var(--blackColor);
     font-size: 40px;
-    margin: var(--marginFifty);
+    margin-left: 25px;
 }
-p {
+p, li{
     border-left: var(--borderRed);
-    text-indent: 40px;
-    padding: 20px;
     font-size: 20px;
     background-color: #d3d3d3;
-    margin: 10px;
+    margin: 10px 30px;
 }
 /*think I finally got the flexbox working*/
 section {
     display: var(--flexDisplay);
     align-items: flex-start;
     flex-direction: column;
-    margin-left: var(--marginFifty);
+    /* margin-left: var(--marginFifty); */
 }
 .center {
     display: var(--flexDisplay);
     flex-direction: var(--columnDirection);
     align-items: var(--alignItems);
 }
-.comingSoon {
+.forecast {
     display: var(--flexDisplay);
     align-items: var(--alignItems);
     border: var(--borderRed);
-    width: 51%;
     background-color: var(--blackColor);
+    height: 35%;
 }
 .deployed {
-    width: var(--width100);
-    height: 100%;
+    width: 100%;
 }
-.refactor, .me {
+.weather, .planner {
     display: var(--flexDisplay);
     border: var(--borderRed);
     margin-top: 10px;
-    width: 25%;
     background-color: var(--blackColor);
 }
-.me {
-    margin-left: 10px;
-}
+
 h4 {
     display: var(--flexDisplay);
     background-color: var(--redColor);
     height: 35%;
-    font-size: 35px;
+    font-size: 30px;
 }
 .imgLink:hover {
     opacity: 50%;
@@ -159,100 +141,30 @@ h4 {
 .h4Link:link {
     color: var(--blackColor);
 }
+aside {
+    display: var(--flexDisplay);
+    justify-content: center;
+    align-items: center;
+}
+.repoLink:link {
+    margin-left: 10px;
+    color: var(--blackColor);
+    padding: 10px;
+
+}
+.repoLink:visited {
+    color: var(--blackColor);
+}
+.repoLink:hover {
+    cursor: pointer;
+    color: var(--whiteColor);
+}
+
+
 /*changed images to be reponsive to screen size*/
-@media screen and (max-width: 320px) {
+
+@media screen and (max-width: 1024px) {
     header, footer {
-        flex-direction:var(--columnDirection);
-    }
-    h1 {
-        font-size: 40px;
-    }
-    p {
-        width:var(--width100);
-        margin: var(--marginZero);
-        padding: 0;
-    }
-    section {
-        margin: var(--marginZero);
-    }
-    h3, figure {
-        flex-direction:var(--columnDirection);
-        font-size: 25px;
-    }
-    #projects {
-        margin: var(--marginFifty);
-    }
-    h2 {
-        font-size: 30px;
-    }
-    figure {
-        width: var(--width100);
-        margin: var(--marginZero);
-    }
-    #family {
-        margin-left: var(--marginZero);
-        height: 300px;
-    }
-    #teddy {
-        margin: var(--marginZero);
-    }
-    h4 {
-        font-size: 25px;
-    }
-    .comingSoon, .refactor, .me {
-        width:var(--width100);
-        flex-direction:var(--columnDirection);
-    }
-    .me {
-        margin-left: 10px;
-    }
-    .imgLink {
-        width: var(--width100);
-    }
-}
-@media screen and (max-width: 600px) {
-    header, footer{
-        flex-direction:var(--columnDirection);
-    }
-    /*can't get p to center*/
-    p {
-        width:var(--width100);
-        padding: 0;
-    }
-    /*can't remove left margin for some reason*/
-    section {
-        margin: var(--marginZero);
-    }
-    h3, figure {
-        flex-direction:var(--columnDirection);
-        align-items: center;
-    }
-    figure {
-        width: var(--width100);
-        margin: var(--marginZero);
-    }
-    #family {
-        width: var(--width100);
-    }
-    #teddy {
-        margin: var(--marginZero);
-    }
-    #projects {
-        margin-left: var(--marginFifty);
-    }
-    .comingSoon, .refactor, .me {
-        width:var(--width100);
-        flex-direction:var(--columnDirection);
-    }
-    .me {
-        margin-left: 10px;
-    }
-    .imgLink {
-        width: var(--width100);
-    }
-}
-@media screen and (max-width: 768px) {
-    header, footer{
         flex-direction:var(--columnDirection);
     }
     /*can't get p to center*/
@@ -272,13 +184,11 @@ h4 {
         width: var(--width100);
         margin: var(--marginZero);
     }
-    #teddy {
+  
+    .teddy {
         margin: var(--marginZero);
     }
-    #projects {
-        margin-left: var(--marginFifty);
-    }
-    .comingSoon, .refactor, .me {
+    .deployed {
         width:var(--width100);
         flex-direction:var(--columnDirection);
     }
@@ -286,7 +196,13 @@ h4 {
         margin-left: 10px;
     }
     .imgLink {
-        width: var(--width100);
+        width: 75%;
+    }
+    .repoLink {
+        font-size: 25px;
+    }
+    .chat {
+        font-size: 20px;
     }
 }
 @media screen and (max-width: 800px) {
@@ -310,13 +226,10 @@ h4 {
         width: var(--width100);
         margin: var(--marginZero);
     }
-    #teddy {
+    .teddy {
         margin: var(--marginZero);
     }
-    #projects {
-        margin-left: var(--marginFifty);
-    }
-    .comingSoon, .refactor, .me {
+    .deployed {
         width:var(--width100);
         flex-direction:var(--columnDirection);
     }
@@ -324,8 +237,8 @@ h4 {
         width: var(--width100);
     }
 }
-@media screen and (max-width: 1024px) {
-    header, footer {
+@media screen and (max-width: 768px) {
+    header, footer{
         flex-direction:var(--columnDirection);
     }
     /*can't get p to center*/
@@ -334,8 +247,19 @@ h4 {
         margin: auto;
         padding: 0;
     }
+    .forecast, .weather, .planner {
+        margin: var(--marginZero);
+        flex-direction: column;
+    }
     section {
         margin: var(--marginZero);
+    }
+    h1 {
+        font-size: 40px;
+        margin: auto;
+    }
+    h2 {
+        font-size: 30px;
     }
     h3, figure {
         flex-direction:var(--columnDirection);
@@ -345,14 +269,74 @@ h4 {
         width: var(--width100);
         margin: var(--marginZero);
     }
-  
-    #teddy {
+    .teddy {
         margin: var(--marginZero);
     }
-    #projects {
-        margin-left: var(--marginFifty);
+    .deployed {
+        width:var(--width100);
+        flex-direction:var(--columnDirection);
     }
-    .comingSoon, .refactor, .me {
+    .imgLink {
+        width: var(--width100);
+    }
+    .repoLink {
+        font-size: 20px;
+    }
+    .navLink {
+        font-size: 20px;
+    }
+    #about {
+        margin: auto;
+        margin-top: 10px;
+    }
+    #projects {
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 600px) {
+    header, footer {
+        flex-direction:var(--columnDirection);
+    }
+    h1 {
+        font-size: 30px;
+        margin: auto;
+    }
+    p {
+        width:var(--width100);
+        margin: var(--marginZero);
+        font-size: 15px;
+        padding: 0;
+    }
+    .forecast, .weather, .planner {
+        margin: var(--marginZero);
+        flex-direction: column;
+    }
+    h3, figure {
+        flex-direction:var(--columnDirection);
+        font-size: 25px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    figure {
+        width: var(--width100);
+        margin: var(--marginZero);
+    }
+    #family {
+        margin: var(--marginZero);
+        width: 80%;
+        height: 300px;
+    }
+    .teddy {
+        margin: var(--marginZero);
+        width: 80%;
+    }
+    h4 {
+        font-size: 25px;
+    }
+    .deployed {
         width:var(--width100);
         flex-direction:var(--columnDirection);
     }
@@ -362,4 +346,91 @@ h4 {
     .imgLink {
         width: var(--width100);
     }
+    .repoLink {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .chat {
+        font-size: 18px;
+    }
+    #about {
+        margin: auto;
+        margin-top: 10px;
+    }
+    #projects {
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 }
+@media screen and (max-width: 320px) {
+    header, footer {
+        flex-direction:var(--columnDirection);
+        margin: var(--marginZero)
+    }
+    h1 {
+        font-size: 30px;
+        margin: auto;
+    }
+    p {
+        width:100;
+        margin: var(--marginZero);
+        padding: 0;
+        font-size: 16px;
+    }
+    .forecast, .weather, .planner {
+        margin: var(--marginZero);
+        flex-direction: column;
+    }
+    h3, figure {
+        flex-direction:var(--columnDirection);
+        font-size: 25px;
+        margin: var(--marginZero);
+        justify-content: center;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    figure {
+        width: var(--width100);
+        margin: var(--marginZero);
+    }
+    #family {
+        margin: var(--marginZero);
+        width: 100% !important;
+        height: 300px;
+    }
+    .teddy {
+        margin: var(--marginZero);
+        width: 100% !important;
+    }
+    h4 {
+        font-size: 25px;
+    }
+    .deployed {
+        width:var(--width100);
+        flex-direction:var(--columnDirection);
+    }
+    .imgLink {
+        width: var(--width100);
+    }
+    .repoLink {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .chat {
+        font-size: 16px;
+    }
+    #about {
+        margin: auto;
+        margin-top: 10px;
+    }
+    #projects {
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+
+

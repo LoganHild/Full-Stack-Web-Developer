@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/stylesheet.css"/>
     <title>Logan's Professional Portfolio</title>
 </head>
@@ -15,6 +16,7 @@
             <a class="navLink" href="#about">About Me</a>
             <a class="navLink" href="#projects">Projects</a>
             <a class ="navLink" href="#contact">Contact Me</a>
+            <a href="#" class="navLink">Resume</a>
         </nav>
     </header>
     <div class="gradient"></div>
@@ -25,42 +27,42 @@
         </div>
         <figure><img class="photo" src="./assets/images/Picture of Self.jpg" alt="picture of self"></figure>
         <article>
-            <div>
-                <h3 id="about">About Me</h3>
-            </div>
+            <h3 id="about" class="col-4">About Me</h3>
             <p>Full-stack web developer leveraging a background in customer service and care for disabled adults. 
                 Working with disabled adults provided skills in working with others and goal-oriented tasks while developing skills with decision making and problem solving as an independent staff member. 
                 The independence taught skills in how to stay focused, organized,  calm under stress, and to adapt to change.
                 Recently earned a certificate in full-stack development from the University of Minnesota Coding Bootcamp, learning quickly to gain proficiency in HTML, CSS, and JavaScript. 
-                My goal with these newly acquired skills is to create a user-friendly, accessible, and interactive web experience for every user, while aligning with specific goals and exceeding expectations.</p>
-            <p> I am from Cannon Falls, Minnesota, a town of 4,000 or so people, but am currently residing in Red Wing, Minnesota.
+                My goal with these newly acquired skills is to create a user-friendly, accessible, and interactive web experience for every user, while aligning with specific goals and exceeding expectations.
+            </p>
+            <p> I am from Cannon Falls, Minnesota, a town of 4,000 or so people, currently residing in Red Wing, Minnesota.
                 I've worked as a DSP for about 6 years taking care of vulnerable adults.
                 My favorite hobby is just being at home and relaxing. I love Dogs, and I try to visit my family dog whenever I have a chance. His name is Teddy.
                 Lately I have really enjoyed working with CSS and getting to see my changes in real time.
                 I enjoy playing Video Games in my free time but lately I have been focused on trying new recipes, exercising more, 
-                and just trying to live a healthier lifestyle in general.</p>
+                and just trying to live a healthier lifestyle in general.
+            </p>
         </article>
         <!--done with flex, fixed-->
         <figure>
-            <img id="teddy" class="photo" src="./assets/images/Teddy.jpg" alt="My family dog, Teddy.">
+            <img class="teddy photo" src="./assets/images/Teddy.jpg" alt="My family dog, Teddy.">
             <img id="family" src="./assets/images/Family.jpg" alt="Myself and Family at brother's football game.">
+            <img src="./assets/images/Teddy2.jpg" alt="Another picture of my dog, Teddy" class="teddy photo">
         </figure>
         <section>
-            <!--done with h3-->
-            <h3 id="projects">Projects</h3>
-            <div class="center">
-                <div class="comingSoon">
-                    <h4>Forecast with a chance of Camping</h4>
-                    <a class="imgLink" href="https://loganhild.github.io/forecast-with-a-chance-of-camping/" target="_blank"><img class="deployed" src="./assets/images/forecast-with-a-chance-of-camping.png" alt="Forecast-with-a-chance-of-Camping deployed"></a>
+            <h3 id="projects" class="col-4">Projects</h3>
+            <div class="center col-12">
+                <div class="forecast col-10">
+                    <h4><a class="repoLink" href="https://github.com/LoganHild/forecast-with-a-chance-of-camping">Forecast with a chance of Camping</a></h4>
+                    <a class="imgLink col-8" href="https://loganhild.github.io/forecast-with-a-chance-of-camping/" target="_blank"><img class="deployed" src="./assets/images/forecast-with-a-chance-of-camping.png" alt="Forecast-with-a-chance-of-Camping deployed"></a>
                 </div>
-                <div class="align">
-                     <div class="refactor">
-                        <h4>Weather or Not</h4>
-                        <a class ="imgLink" href="https://loganhild.github.io/weather-or-not/" target="_blank"><img class="deployed" src="./assets/images/weather-or-not.png" alt="Weather-or-Not Deployed"></a>
+                <div class="row col-10">
+                    <div class="weather col-6">
+                        <h4><a class="repoLink" href="https://github.com/LoganHild/weather-or-not" target="_blank">Weather or Not</a></h4>
+                        <a class="imgLink col-8" href="https://loganhild.github.io/weather-or-not/" target="_blank"><img class="deployed" src="./assets/images/weather-or-not.png" alt="Weather-or-Not Deployed"></a>
                     </div> 
-                    <div class="me">
-                        <h4>Easy Planner</h4>
-                        <a class="imgLink" href="https://loganhild.github.io/easy-planner/" target="_blank"><img class="deployed" src="./assets/images/easy-planner.png" alt="Easy-Planner deployed"></a>
+                    <div class="planner col-6">
+                        <h4><a class="repoLink" href="https://github.com/LoganHild/easy-planner" target="_blank">Easy Planner</a></h4>
+                            <a class="imgLink col-8" href="https://loganhild.github.io/easy-planner/" target="_blank"><img class="deployed" src="./assets/images/easy-planner.png" alt="Easy-Planner deployed"></a>
                     </div>
                 </div>
             </div>
@@ -68,10 +70,10 @@
     </main>
     <div class="reverse"></div>
     <footer>
-        <h3 id="contact">Contact Me!</h3>
+        <h3 id="contact">Contact Info:</h3>
         <a class="chat" href="mailto:hildebrandtlogan@gmail.com" target="_blank">hildebrandtlogan@gmail.com</a>
-        <a class="chat" href="https://github.com/LoganHild" target="_blank">GitHub</a>
         <a class="chat" href="tel:5073842518">(507)-384-2518</a>
+        <a class="chat" href="https://github.com/LoganHild" target="_blank">GitHub</a>
         <a class="chat" href="https://www.linkedin.com/in/logan-hildebrandt-923553210/" target="_blank">LinkedIn</a>
     </footer>
 </body>
