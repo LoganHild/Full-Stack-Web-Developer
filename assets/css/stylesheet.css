@@ -25,6 +25,9 @@ h1 {
     background-color: var(--redColor); 
     border: var(--borderWhite);
 }
+.navLink, .chat {
+    font-size: 25px;
+}
 .navLink:link, .chat:link {
     display: inline-flex;
     padding: 0 50px;
