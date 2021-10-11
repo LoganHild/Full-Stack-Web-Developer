@@ -203,6 +203,7 @@ aside {
     }
     .repoLink {
         font-size: 25px;
+        padding: 50px;
     }
     .chat {
         font-size: 20px;
@@ -235,6 +236,9 @@ aside {
     .deployed {
         width:var(--width100);
         flex-direction:var(--columnDirection);
+    }
+    .repoLink {
+        padding: 50px;
     }
     .imgLink {
         width: var(--width100);
@@ -284,6 +288,8 @@ aside {
     }
     .repoLink {
         font-size: 20px;
+        padding: 50px;
+
     }
     .navLink {
         font-size: 20px;
@@ -352,6 +358,7 @@ aside {
     .repoLink {
         font-size: 18px;
         margin-bottom: 5px;
+        padding: 50px;
     }
     .chat {
         font-size: 18px;
@@ -420,6 +427,7 @@ aside {
     .repoLink {
         font-size: 16px;
         margin-bottom: 5px;
+        padding: 50px;
     }
     .chat {
         font-size: 16px;
