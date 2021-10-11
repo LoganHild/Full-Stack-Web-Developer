@@ -34,9 +34,6 @@
   ## Contributions
   Logan Hildebrandt
 
-  ## Tests
-  N/A
-
   ## Questions
   Contact me with any questions!
 
