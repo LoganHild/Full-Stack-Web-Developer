@@ -166,6 +166,8 @@ aside {
 
 /*changed images to be reponsive to screen size*/
 
+
+
 @media screen and (max-width: 1024px) {
     header, footer {
         flex-direction:var(--columnDirection);
@@ -208,6 +210,9 @@ aside {
     .chat {
         font-size: 20px;
     }
+    h4 {
+        font-size: 16px;
+    }
 }
 @media screen and (max-width: 800px) {
     header, footer {
@@ -242,6 +247,9 @@ aside {
     }
     .imgLink {
         width: var(--width100);
+    }
+    h4 {
+        font-size: 16px;
     }
 }
 @media screen and (max-width: 768px) {
@@ -343,7 +351,7 @@ aside {
         width: 80%;
     }
     h4 {
-        font-size: 25px;
+        font-size: 15px;
     }
     .deployed {
         width:var(--width100);
